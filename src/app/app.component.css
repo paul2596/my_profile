@@ -1,3 +1,4 @@
+
 .demo{ background-color: #e7e7e7; }
 .main-timeline{
     font-family: 'Titillium Web', sans-serif;
@@ -47,7 +48,7 @@
     margin: 0 0 10px;
 }
 .main-timeline .title{
-    color: #333;
+    color: #222;
     font-size: 25px;
     font-weight: 600;
     text-transform: uppercase;
@@ -97,4 +98,415 @@
     .main-timeline .timeline:nth-child(even):before{ right: 0; }
     .main-timeline .timeline-content{ width: 85%; }
     .main-timeline .title{ font-size: 18px; }
+}
+
+.center-align{
+  text-align: center;
+}
+
+.text-justify{
+  text-align: justify;
+}
+.section-title, .section-desc {
+  margin: 1rem auto;
+  text-align: center;
+}
+
+.grid-cards {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 2rem;
+  margin-top: 2rem;
+}
+.two-grid-cards {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 2rem;
+}
+
+.sub-three-grid-cards{
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+}
+.card {
+  padding: 0.7rem;
+  background-color: #fff;
+  border-radius: 0.5rem;
+  border-bottom: 4px solid #222;
+  box-shadow: 0 4px 12px #aaaaaacc;
+}
+.divider {
+  border-bottom: 1px solid #ccc;
+  width: 100%;
+  margin-block: 1rem;
+}
+.projects-button-row {
+  display: table-cell;
+}
+.button-custom-color{
+  background-color: #353535 !important;
+}
+.btn-primary{
+  margin-right: 5px;
+  background-color: #222;
+}
+.not-selected {
+  background-color: grey;
+  color: black;
+  background-color: lightgray;
+  border-color: lightgray;
+}
+.header-img{
+  width: -webkit-fill-available;
+  height: 500px;
+}
+
+.nav {
+  padding: 0.5rem 0;
+  background-color: #222;
+  position: sticky;
+  top: 0;
+  z-index: 100;
+}
+.contact-me{
+  position: relative;
+  top: 10px;
+}
+.header-text{
+  color: white !important;
+}
+.padding-0{
+  padding:0px !important;
+}
+.nav-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.portfolio-img-cover {
+  position: relative;
+}
+
+/*work experience*/
+.work-exp-grid{
+  display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 2rem;
+    gap: 2rem;
+    margin-top: 2rem;
+}
+
+.work-details-font{
+  color: black;
+}
+/*Project tabs*/
+.project-tabs{
+  background-color: white !important;
+  z-index: 0;
+  padding-bottom: 0px;
+}
+
+.project-tab-active{
+  color: #fff;
+  background-color: #222 !important;
+  border-color: #222 !important;
+}
+
+.project-tab-inactive{
+  background-color: lightgrey;
+  color: black;
+  background-color: lightgray;
+  border-color: lightgray;
+}
+
+.projects-tab-card{
+  min-height: 400px;
+}
+
+.chip {
+  padding: 5px 12px;
+  background-color: #222;;
+  width: fit-content;
+  border-radius: 0.2rem;
+  color: #fff;
+  margin-bottom: 0.5rem;
+}
+
+
+.hobbies-img{
+  height: 82px;
+  width: 82px;
+}
+
+.hobbies-grid-cards{
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-gap: 2rem;
+  gap: 2rem;
+  margin-top: 2rem;
+}
+
+.hobbies-btn{
+  padding: 5px;
+}
+.work-exp-web{
+  color: white;
+}
+
+.custom-card-body{
+  padding-top: 5px;
+}
+
+
+.text-14{
+  font-size: 14px;
+}
+
+.margin-top-10{
+  margin-top: 10px;
+}
+
+.alternate-section-background{
+ background-color: #f1f2f4;
+}
+
+.padding-12{
+  padding: 12px;
+}
+
+
+
+.image-container img {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+.overlay-text {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  /* background-color: #000000; */
+  color: #fff;
+  padding: 10px 20px;
+  font-size: 20px;
+  text-align: center;
+}
+
+
+
+/*skill cards*/
+.skill-card{
+  padding: 10px;
+  background-color: #fff;
+  border-radius: 0.5rem;
+  box-shadow: 0 4px 12px #aaaaaacc;
+  margin-right: 5px;
+  margin-bottom: 5px;
+  min-height: 100px;
+}
+
+.skills-img{
+  height: 35px;
+  width: 40px;
+}
+
+
+@media only screen and (max-width: 675px) {
+  .tips {
+    display:none;
+  }
+
+
+}
+/*** Speech Bubble CSS Code Starts Here ***/
+
+.speech-bubble{
+  --arrow-w:0.5em;
+  --arrow-h:1em;
+  --bubble-corners:0;
+  --w:12em;
+  --border-size:3px;
+  --text-color:black;
+  --bubble-color:white;
+  --border-color:black;
+}
+.speech-bubble{
+  text-align:center;
+  font-family:cursive;
+  font-size:20px;
+  font-weight:bold;
+  color:var(--text-color);
+  background:var(--bubble-color);
+  padding:0.5em;
+  position:relative;
+  border-radius:var(--bubble-corners);
+  max-width:var(--w);
+  box-shadow:0 0 0 var(--border-size) var(--border-color);
+  min-width: 450px;
+}
+
+@media (max-width: 800px) {
+  .speech-bubble{
+    text-align:center;
+    font-family:cursive;
+    font-size:12px;
+    font-weight:bold;
+    color:var(--text-color);
+    background:var(--bubble-color);
+    padding:0.5em;
+    position:absolute;
+    border-radius:var(--bubble-corners);
+    max-width:var(--w);
+    box-shadow:0 0 0 var(--border-size) var(--border-color);
+    min-width: 320px;
+  }
+  .bubble-position{
+    bottom: 145px !important;
+    right: 22px !important;
+  }
+}
+.speech-bubble.round{
+  --bubble-corners:1em;
+}
+
+.speech-bubble.circle{
+  --bubble-corners:100%;
+  padding:2em;
+}
+
+.speech-bubble:before,.speech-bubble:after{
+  content:"";
+  position:absolute;
+  bottom:calc(-1 * var(--arrow-h) * 2 + 0.5px);
+  left:50%;
+  border-style:solid;
+  border-width:var(--arrow-h) var(--arrow-w);
+  border-color:var(--bubble-color) transparent transparent;
+}
+
+.speech-bubble:before{
+  border-width:calc(var(--arrow-h) + var(--border-size)) calc(var(--arrow-w) + var(--border-size));
+  border-color:var(--border-color) transparent transparent;
+  bottom:calc(-1 * var(--arrow-h) * 2 - 2.5*var(--border-size));
+  left:calc(50% - var(--border-size));
+}
+
+.speech-bubble.t:after{
+  border-color:transparent transparent var(--bubble-color);
+  bottom:auto;
+  top:calc(-1 * var(--arrow-h) * 2 + 0.5px);
+}
+
+.speech-bubble.t:before{
+  border-width:calc(var(--arrow-h) + var(--border-size)) calc(var(--arrow-w) + var(--border-size));
+  border-color:transparent transparent var(--border-color);
+  bottom:auto;
+  top:calc(-1 * var(--arrow-h) * 2 - 2.5*var(--border-size));
+}
+
+.speech-bubble.l:after{
+  border-color:transparent var(--bubble-color) transparent transparent;
+  bottom:auto;
+  border-width:var(--arrow-w) var(--arrow-h);
+  top:calc(50% - var(--arrow-w));
+  left:calc(-1 * var(--arrow-h) * 2 + 0.5px);
+}
+
+.speech-bubble.l:before{
+  border-width:calc(var(--arrow-w) + var(--border-size)) calc(var(--arrow-h) + var(--border-size));
+  border-color:transparent var(--border-color) transparent transparent;
+  bottom:auto;
+  top:calc(50% - var(--arrow-w) - var(--border-size));
+  left:calc(-1 * var(--arrow-h) * 2 - 2.5*var(--border-size));
+}
+
+.speech-bubble.r:after{
+  border-color:transparent transparent transparent var(--bubble-color);
+  bottom:auto;
+  left:auto;
+  border-width:var(--arrow-w) var(--arrow-h);
+  top:calc(50% - var(--arrow-w));
+  right:calc(-1 * var(--arrow-h) * 2 + 0.5px);
+}
+
+.speech-bubble.r:before{
+  border-width:calc(var(--arrow-w) + var(--border-size)) calc(var(--arrow-h) + var(--border-size));
+  border-color:transparent transparent transparent var(--border-color);
+  bottom:auto;
+  left:auto;
+  top:calc(50% - var(--arrow-w) - var(--border-size));
+  right:calc(-1 * var(--arrow-h) * 2 - 2.5*var(--border-size));
+}
+
+.speech-bubble.pop{
+  animation-name: pop;
+  animation-duration: 0.5s;
+  animation-timing-function:cubic-bezier(0.755, 0.050, 0.855, 0.060);
+}
+
+.speech-bubble.float{
+  animation-name: float-up;
+  animation-duration: 2s;
+  animation-iteration-count: infinite;
+  animation-timing-function:ease;
+}
+
+.speech-bubble.r.float{
+  animation-name: float-left;
+}
+
+.speech-bubble.l.float{
+  animation-name: float-right;
+}
+
+.speech-bubble.t.float{
+  animation-name: float-down;
+}
+
+@keyframes pop {
+  0% {transform: scale(0.8);}
+  80% {transform: scale(1.1);}
+  90% {transform: scale(0.9);}
+  100% {transform: scale(1);}
+}
+
+@keyframes float-up {
+  0% {transform: translateY(0);}
+  50% {transform: translateY(calc(-1 * var(--arrow-h)));}
+}
+
+@keyframes float-left {
+  0% {transform: translateX(0);}
+  50% {transform: translateX(calc(-1 * var(--arrow-h)));}
+}
+
+@keyframes float-right {
+  0% {transform: translateX(0);}
+  50% {transform: translateX(var(--arrow-h));}
+}
+
+@keyframes float-down {
+  0% {transform: translateY(0);}
+  50% {transform: translateY(var(--arrow-h));}
+}
+
+.bubble-position{
+  bottom: 360px;
+  right: 335px;
+}
+
+
+.margin-bottom-10{
+  margin-bottom: 10px;
+}
+
+.margin-bottom-5{
+  margin-bottom: 5px;
+}
+
+.contact-img{
+  height: 25px;
 }

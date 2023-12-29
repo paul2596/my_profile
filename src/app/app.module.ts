@@ -3,6 +3,10 @@ import { BrowserModule } from '@angular/platform-browser';
 
 import { AppComponent } from './app.component';
 
+
+
+export class MaterialModule {}
+
 @NgModule({
   declarations: [
     AppComponent
