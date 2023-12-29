@@ -370,7 +370,7 @@
   }
   .bubble-position{
     bottom: 142px !important;
-    right: 22px !important;
+    right: 20px !important;
   }
 }
 
@@ -391,7 +391,7 @@
   }
   .bubble-position{
     bottom: 76px !important;
-    right: 14px !important;
+    right: 8px !important;
   }
 }
 .speech-bubble.round{
@@ -525,6 +525,9 @@
 }
 
 
+.margin-top-10{
+  margin-top: 10px;
+}
 .margin-bottom-10{
   margin-bottom: 10px;
 }
