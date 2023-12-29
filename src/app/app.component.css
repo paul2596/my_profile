@@ -353,7 +353,7 @@
 
 
 
-@media (max-width: 800px) {
+@media (max-width: 820px) {
   .speech-bubble{
     text-align:center;
     font-family:cursive;
@@ -374,7 +374,7 @@
   }
 }
 
-@media (max-width: 400px) {
+@media (max-width: 450px) {
   .speech-bubble{
     text-align:center;
     font-family:cursive;
