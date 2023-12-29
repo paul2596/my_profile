@@ -348,6 +348,11 @@
   min-width: 450px;
 }
 
+
+
+
+
+
 @media (max-width: 800px) {
   .speech-bubble{
     text-align:center;
@@ -366,6 +371,27 @@
   .bubble-position{
     bottom: 145px !important;
     right: 22px !important;
+  }
+}
+
+@media (max-width: 400px) {
+  .speech-bubble{
+    text-align:center;
+    font-family:cursive;
+    font-size:8px;
+    font-weight:bold;
+    color:var(--text-color);
+    background:var(--bubble-color);
+    padding:0.5em;
+    position:absolute;
+    border-radius:var(--bubble-corners);
+    max-width:var(--w);
+    box-shadow:0 0 0 var(--border-size) var(--border-color);
+    min-width: 200px;
+  }
+  .bubble-position{
+    bottom: 85px !important;
+    right: 14px !important;
   }
 }
 .speech-bubble.round{
@@ -509,4 +535,19 @@
 
 .contact-img{
   height: 25px;
+}
+
+.education-card{
+  min-height: 216px;
+}
+.project-card{
+  min-height: 345px;
+}
+
+.work-exp-card{
+  min-height: 525px;
+}
+
+.bachelor-proj{
+  min-height: 692px;
 }

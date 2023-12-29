@@ -45,45 +45,8 @@
     </div>
   </div>
 </div> -->
-<!--Work Experience-->
-<div class="section section-md py-5 alternate-section-background">
-  <h2 class="section-title">Work Experience</h2>
-  <div class="container">
-    <div class="work-exp-grid">
-      <div class="card">
-        <h5>Data Science Research Assistant</h5>
-        <i>Part Time</i>
-        <p>Aug 2023</p>
-        <div class="divider"></div>
-        <div class="chip"><a href="https://www.ncl.ac.uk/"  target="_blank" rel="noopener noreferrer" class="work-exp-web">Newcastle University</a></div>
-        <ul class="work-details-font">
-          <li>Built automated web scrapers using selenium in python.</li>
-          <li>Preprocessed and managed data using python and PostgreSQL.</li>
-          <li>Carried out various NLP based analysis to extract insights on the raw data like clustering, LDA (Latent
-            Discriminant Analysis).</li>
-          <li>Built a standalone application based on Flask Framework with Angular for frontend interactions.</li>
-          <li>Presented the analysis on the web application by integrating analysis from python and dashboards from PowerBI </li>
-        </ul>
-      </div>
-      <div class="card">
-        <h5>Full Stack Web Developer</h5>
-        <i>Full time</i>
-        <p>2018 - 2021</p>
-        <div class="divider"></div>
-        <div class="chip"><a href="https://www.tcs.com/"  target="_blank" rel="noopener noreferrer" class="work-exp-web">Tata Consultancy Services</a></div>
-        <ul class="work-details-font">
-          <li>Developed applications utilizing a tech stack that included, Java, AngularJS, HTML, CSS, Spring, Hibernate, PostgreSQL, NoSQL (Solr), and Git, following Agile methodology.</li>
-          <li>Developed a streamlined job opportunity portal, built interactive tools for agile productivity, implemented and maintained functionalities for a application showcasing company products.</li>
-          <li>Improved the user experience by enhancing the feedback system for the application.</li>
-          <li>Implemented access governance mechanisms within application services, ensuring security, for role based access to end users. </li>
-          <li>Built interactive dashboards accessible by stakeholders for visual insights on application rating, user traffic and other stats.</li>
-          <!-- <li>Collaborated with stakeholders, gathered requirements, and ensured timely delivery. Played a key role in onboarding and training new team members.</li> -->
-        </ul>
-      </div>
-    </div>
-  </div>
-</div>
-<!-- Title  -->
+
+<!-- Projects  -->
 <div class="section section-md py-5">
   <h2 class="section-title">Projects</h2>
   <div class="container">
@@ -120,31 +83,36 @@
             Processing</button> -->
         </div>
         <div [hidden]="selectedButton!='Pinned Projects'">
-          <div class="grid-cards">
-            <div class="card">
-              <h6>Analyzed the Impact of Using Additional Weather Information on the Accuracy of Power Production Models for
-                Offshore Wind Turbines</h6>
-                <div class="ratio ratio-16x9">
-                  <img src="/assets/offshore-turbine.jpg" alt="">
+            <div class="row">
+              <div class="col-lg-4 col-md-6 col-sm-6">
+                <div class="card project-card">
+                  <h6>Analyzed the Impact of Using Additional Weather Information on the Accuracy of Power Production Models for
+                    Offshore Wind Turbines</h6>
+                    <div class="ratio ratio-16x9">
+                      <img src="/assets/offshore-turbine.jpg" alt="">
+                    </div>
+                  <a href="https://github.com/paul2596/oswt_app" class="btn btn-primary" target="_blank" rel="noopener noreferrer">GitHub Repo</a>
                 </div>
-              <a href="https://github.com/paul2596/oswt_app" class="btn btn-primary" target="_blank" rel="noopener noreferrer">GitHub Repo</a>
-            </div>
-            <div class="card">
-              <h6>Built Visualization Dashboards to get Insights on the Spread of an Airborne Disease in Manchester from Simulated Data</h6>
-              <div class="ratio ratio-16x9">
-                <img src="/assets/data-viz.png" alt="">
               </div>
-              <a href="https://github.com/paul2596/oswt_app" class="btn btn-primary" target="_blank" rel="noopener noreferrer">GitHub Repo</a>
-            </div>
-            <div class="card">
-              <h6>Built Multiple Automated Scrapers To Extract Useful Information About Companies for a Data Science Hackathon and Won it</h6>
-              <div class="ratio ratio-16x9">
-                <img src="/assets/selenium-python-img.png" alt="">
+              <div class="col-lg-4 col-md-6 col-sm-6">
+                <div class="card project-card">
+                  <h6>Built Visualization Dashboards to get Insights on the Spread of an Airborne Disease in Manchester from Simulated Data&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</h6>
+                  <div class="ratio ratio-16x9">
+                    <img src="/assets/data-viz.png" alt="">
+                  </div>
+                  <a href="https://github.com/paul2596/oswt_app" class="btn btn-primary" target="_blank" rel="noopener noreferrer">GitHub Repo</a>
+                </div>
               </div>
-              <a href="https://github.com/paul2596/Data-Science-Hackathon" class="btn btn-primary" target="_blank" rel="noopener noreferrer">GitHub Repo</a>
+              <div class="col-lg-4 col-md-6 col-sm-6">
+                <div class="card project-card">
+                  <h6>Built Multiple Automated Scrapers To Extract Useful Information About Companies for a Data Science Hackathon and Won it</h6>
+                  <div class="ratio ratio-16x9">
+                    <img src="/assets/selenium-python-img.png" alt="">
+                  </div>
+                  <a href="https://github.com/paul2596/Data-Science-Hackathon" class="btn btn-primary" target="_blank" rel="noopener noreferrer">GitHub Repo</a>
+                </div>
+              </div>
             </div>
-          </div>
-
 
         </div>
         <div [hidden]="selectedButton!='All Projects'">
@@ -331,7 +299,7 @@
         </div>
         <div [hidden]="selectedButton!='Image Processing'">
           <div class="grid-cards">
-            <div class="card">
+            <div class="card bachelor-proj">
               <h6>Image Denoising in Frequency Domain Using Fourier Transform Based Algorithm</h6>
               <div class="ratio ratio-16x9 ">
                 <img src="/assets/image-processing.png" alt="">
@@ -343,44 +311,50 @@
       </div>
       <!--Bachelors Projects-->
       <div [hidden]="selectedTabButton!='Bachelors'">
-        <div class="grid-cards">
-          <div class="card">
-            <h6>
-              Analysis of the Effectiveness of HVOF Coating on Turbine and Boiler Materials Subjected to Hot Corrosion (2018)</h6>
+        <div class="row">
+          <div class="col-lg-4 col-md-6 col-sm-6">
+            <div class="card bachelor-proj">
+              <h6>
+                Analysis of the Effectiveness of HVOF Coating on Turbine and Boiler Materials Subjected to Hot Corrosion (2018)</h6>
+                <div class="ratio ratio-16x9 margin-bottom-10">
+                  <img src="/assets/hvof-image.png" alt="">
+                </div>
+                <ul>
+                  <li>Visualized weight changes across cycles helped understand material behavior.</li>
+                  <li>Identified surface composition changes through XRD(X-Ray Diffraction) and cluster analysis.</li>
+                  <li>Carried out Analysis on the SEM(Scanning Electron Microscope) data revealing topography changes. </li>
+                  <li>Co-authored a research paper published in the International Journal for Science and Advance Research In Technology.</li>
+                </ul>
+                <a href="https://ijsart.com/Content/PDFDocuments/IJSARTV4I523511.pdf" class="btn btn-primary" target="_blank" rel="noopener noreferrer">View Report</a>
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-6 col-sm-6">
+            <div class="card bachelor-proj">
+              <h6>Design, Analysis and Fabrication of an Electric Solar Vehicle (2017)</h6>
               <div class="ratio ratio-16x9 margin-bottom-10">
-                <img src="/assets/hvof-image.png" alt="">
+                <img src="/assets/solar-car-img.PNG" alt="">
               </div>
               <ul>
-                <li>Visualized weight changes across cycles helped understand material behavior.</li>
-                <li>Identified surface composition changes through XRD(X-Ray Diffraction) and cluster analysis.</li>
-                <li>Carried out Analysis on the SEM(Scanning Electron Microscope) data revealing topography changes. </li>
-                <li>Co-authored a research paper published in the International Journal for Science and Advance Research In Technology.</li>
+                <li>Used SolidWorks for comprehensive design and structural analysis.</li>
+                <li>Analyzed to identify potential failure sites, which were refined over several iterations, thus improving the design and raising the Factor of Safety.</li>
+                <li>Presented the analysis findings to stakeholders to obtain design approval for the solar vehicle.</li>
+                <li>Participated in a national level competition organized by Imperial Society of Innovative Engineers (ISIEINDIA), where the fabricated vehicle was subjected to different types of testing to assess the vehicles performance, stability and reliability.</li>
               </ul>
-              <a href="https://ijsart.com/Content/PDFDocuments/IJSARTV4I523511.pdf" class="btn btn-primary" target="_blank" rel="noopener noreferrer">View Report</a>
-          </div>
-          <div class="card">
-            <h6>Design, Analysis and Fabrication of an Electric Solar Vehicle (2017)</h6>
-            <div class="ratio ratio-16x9 margin-bottom-10">
-              <img src="/assets/solar-car-img.PNG" alt="">
             </div>
-            <ul>
-              <li>Used SolidWorks for comprehensive design and structural analysis.</li>
-              <li>Analyzed to identify potential failure sites, which were refined over several iterations, thus improving the design and raising the Factor of Safety.</li>
-              <li>Presented the analysis findings to stakeholders to obtain design approval for the solar vehicle.</li>
-              <li>Participated in a national level competition organized by Imperial Society of Innovative Engineers (ISIEINDIA), where the fabricated vehicle was subjected to different types of testing to assess the vehicles performance, stability and reliability.</li>
-            </ul>
           </div>
-          <div class="card">
-            <h6>Design and Development of an ATV (2016)&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</h6>
-            <div class="ratio ratio-16x9 margin-bottom-10">
-              <img src="/assets/atv-img.jpg" alt="">
+          <div class="col-lg-4 col-md-6 col-sm-6">
+            <div class="card bachelor-proj">
+              <h6>Design and Development of an ATV (2016)&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</h6>
+              <div class="ratio ratio-16x9 margin-bottom-10">
+                <img src="/assets/atv-img.jpg" alt="">
+              </div>
+              <ul>
+                <li>Worked on the Design and analysis of the ATV's roll cage, ensuring structural integrity and safety under various conditions.</li>
+                <li>Identified key points for suspension, for optimum performance and stability across diverse terrains.</li>
+                <li>Worked on the fabrication process to bring the design to life.</li>
+                <li>Engaged in comprehensive testing procedures, fine-tuning the ATV to optimize performance, reliability, and safety.</li>
+              </ul>
             </div>
-            <ul>
-              <li>Worked on the Design and analysis of the ATV's roll cage, ensuring structural integrity and safety under various conditions.</li>
-              <li>Identified key points for suspension, for optimum performance and stability across diverse terrains.</li>
-              <li>Worked on the fabrication process to bring the design to life.</li>
-              <li>Engaged in comprehensive testing procedures, fine-tuning the ATV to optimize performance, reliability, and safety.</li>
-            </ul>
           </div>
         </div>
       </div>
@@ -391,137 +365,238 @@
   </div>
 </div>
 
+<!--Work Experience-->
 <div class="section section-md py-5 alternate-section-background">
+  <h2 class="section-title">Work Experience</h2>
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-6 col-md-6 col-sm-6">
+        <div class="card work-exp-card">
+          <h5>Data Science Research Assistant</h5>
+          <i>Part Time</i>
+          <p>Aug 2023</p>
+          <div class="divider"></div>
+          <div class="chip"><a href="https://www.ncl.ac.uk/"  target="_blank" rel="noopener noreferrer" class="work-exp-web">Newcastle University</a></div>
+          <ul class="work-details-font">
+            <li>Built automated web scrapers using selenium in python.</li>
+            <li>Preprocessed and managed data using python and PostgreSQL.</li>
+            <li>Carried out various NLP based analysis to extract insights on the raw data like clustering, LDA (Latent
+              Discriminant Analysis).</li>
+            <li>Built a standalone application based on Flask Framework with Angular for frontend interactions.</li>
+            <li>Presented the analysis on the web application by integrating analysis from python and dashboards from PowerBI </li>
+          </ul>
+        </div>
+      </div>
+      <div class="col-lg-6 col-md-6 col-sm-6">
+        <div class="card work-exp-card">
+          <h5>Full Stack Web Developer</h5>
+          <i>Full time</i>
+          <p>2018 - 2021</p>
+          <div class="divider"></div>
+          <div class="chip"><a href="https://www.tcs.com/"  target="_blank" rel="noopener noreferrer" class="work-exp-web">Tata Consultancy Services</a></div>
+          <ul class="work-details-font">
+            <li>Developed applications utilizing a tech stack that included, Java, AngularJS, HTML, CSS, Spring, Hibernate, PostgreSQL, NoSQL (Solr), and Git, following Agile methodology.</li>
+            <li>Developed a streamlined job opportunity portal, built interactive tools for agile productivity, implemented and maintained functionalities for a application showcasing company products.</li>
+            <li>Improved the user experience by enhancing the feedback system for the application.</li>
+            <li>Implemented access governance mechanisms within application services, ensuring security, for role based access to end users. </li>
+            <li>Built interactive dashboards accessible by stakeholders for visual insights on application rating, user traffic and other stats.</li>
+            <!-- <li>Collaborated with stakeholders, gathered requirements, and ensured timely delivery. Played a key role in onboarding and training new team members.</li> -->
+          </ul>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</div>
+<!--Skills-->
+<div class="section section-md py-5">
   <h2 class="section-title">Skills & Awards</h2>
   <div class="container">
-    <div class="two-grid-cards">
-    </div>
-    <div class="two-grid-cards">
-      <div>
-        <div class="chip">Skills</div>
-        <div class="sub-three-grid-cards">
-          <div class="new-col">
-            <div class="skill-card">
-              <img [src]=pythonImagePath alt="" class="skills-img">
-              <span class="card-title">Python</span>
-              <!-- <div class="progress--cover">
-                <div class="html--progress"></div>
-              </div> -->
-            </div>
-            <div class="skill-card">
-              <img [src]=powerbiImagePath alt="" class="skills-img">
-              <span class="card-title">Power BI</span>
-            </div>
-            <div class="skill-card">
-              <img [src]=rImagePath alt="" class="skills-img">
-              <span class="card-title">R</span>
-            </div>
+    <div class="row">
+      <div class="col-lg-6 col-md-4 col-sm-4">
+        <div>
+          <div class="chip">Skills</div>
+          <div class="sub-three-grid-cards">
+            <div class="new-col">
+              <div class="skill-card">
+                <img [src]=pythonImagePath alt="" class="skills-img">
+                <span class="card-title">Python</span>
+                <!-- <div class="progress--cover">
+                  <div class="html--progress"></div>
+                </div> -->
+              </div>
+              <div class="skill-card">
+                <img [src]=powerbiImagePath alt="" class="skills-img">
+                <span class="card-title">Power BI</span>
+              </div>
+              <div class="skill-card">
+                <img [src]=rImagePath alt="" class="skills-img">
+                <span class="card-title">R</span>
+              </div>
 
-            <div class="skill-card">
-              <img [src]=javaImagePath alt="" class="skills-img">
-              <span class="card-title">Java</span>
+              <div class="skill-card">
+                <img [src]=javaImagePath alt="" class="skills-img">
+                <span class="card-title">Java</span>
+              </div>
+              <div class="skill-card">
+                <img [src]=tensorflowImagePath alt="" class="skills-img">
+                <span class="card-title">Tensorflow</span>
+              </div>
             </div>
-            <div class="skill-card">
-              <img [src]=tensorflowImagePath alt="" class="skills-img">
-              <span class="card-title">Tensorflow</span>
+            <div class="new-col">
+              <div class="skill-card">
+                <img [src]=pysparkImagePath alt="" class="skills-img">
+                <span class="card-title">PySpark</span>
+              </div>
+              <div class="skill-card">
+                <img [src]=scikitlearnImagePath alt="" class="skills-img">
+                <span class="card-title">scikit learn</span>
+              </div>
+              <div class="skill-card">
+                <img [src]=matplotlibImagePath alt="" class="skills-img">
+                <span class="card-title">Matplotlib</span>
+              </div>
+              <div class="skill-card">
+                <img [src]=cssImagePath alt="" class="skills-img">
+                <span class="card-title">CSS</span>
+              </div>
+              <div class="skill-card">
+                <img [src]=angularImagePath alt="" class="skills-img">
+                <span class="card-title">Angular</span>
+              </div>
             </div>
-          </div>
-          <div class="new-col">
-            <div class="skill-card">
-              <img [src]=pysparkImagePath alt="" class="skills-img">
-              <span class="card-title">PySpark</span>
-            </div>
-            <div class="skill-card">
-              <img [src]=scikitlearnImagePath alt="" class="skills-img">
-              <span class="card-title">scikit learn</span>
-            </div>
-            <div class="skill-card">
-              <img [src]=matplotlibImagePath alt="" class="skills-img">
-              <span class="card-title">Matplotlib</span>
-            </div>
-            <div class="skill-card">
-              <img [src]=cssImagePath alt="" class="skills-img">
-              <span class="card-title">CSS</span>
-            </div>
-            <div class="skill-card">
-              <img [src]=angularImagePath alt="" class="skills-img">
-              <span class="card-title">Angular</span>
-            </div>
-          </div>
-          <div class="new-col">
+            <div class="new-col">
 
-            <div class="skill-card">
-              <img [src]=postgresqlImagePath alt="" class="skills-img">
-              <span class="card-title">PostgreSQL </span>
-            </div>
-            <div class="skill-card">
-              <img [src]=tableauImagePath alt="" class="skills-img">
-              <span class="card-title">Tableau</span>
-            </div>
-            <div class="skill-card">
-              <img [src]=flaskImagePath alt="" class="skills-img">
-              <span class="card-title">Flask</span>
-            </div>
-            <div class="skill-card">
-              <img [src]=htmlflowImagePath alt="" class="skills-img">
-              <span class="card-title">HTML</span>
-            </div>
-            <div class="skill-card">
-              <img [src]=gitImagePath alt="" class="skills-img">
-              <span class="card-title">GIT</span>
+              <div class="skill-card">
+                <img [src]=postgresqlImagePath alt="" class="skills-img">
+                <span class="card-title">PostgreSQL </span>
+              </div>
+              <div class="skill-card">
+                <img [src]=tableauImagePath alt="" class="skills-img">
+                <span class="card-title">Tableau</span>
+              </div>
+              <div class="skill-card">
+                <img [src]=flaskImagePath alt="" class="skills-img">
+                <span class="card-title">Flask</span>
+              </div>
+              <div class="skill-card">
+                <img [src]=htmlflowImagePath alt="" class="skills-img">
+                <span class="card-title">HTML</span>
+              </div>
+              <div class="skill-card">
+                <img [src]=gitImagePath alt="" class="skills-img">
+                <span class="card-title">GIT</span>
+              </div>
             </div>
           </div>
         </div>
+
+
+
       </div>
+      <div class="col-lg-6 col-md-4 col-sm-4">
+        <div >
+          <div class="chip">Awards</div>
 
-
-      <div class="col--flex">
-        <div class="chip">Awards</div>
-
-        <div class="card margin-bottom-5">
-          <p>2023</p>
-          <p><b>Won a Data Science Hackathon</b> - Newcastle University</p>
-        </div>
-        <div class="card margin-bottom-5">
-          <p>2020</p>
-          <p><b>Special Initiative Award</b> - Tata Consultancy Services</p>
+          <div class="card margin-bottom-5">
+            <p>2023</p>
+            <p><b>Won a Data Science Hackathon</b> - Newcastle University</p>
+          </div>
+          <div class="card margin-bottom-5">
+            <p>2020</p>
+            <p><b>Special Initiative Award</b> - Tata Consultancy Services</p>
+          </div>
         </div>
       </div>
     </div>
   </div>
 </div>
-<div class="section section-md py-5">
+
+<!--Education-->
+<div class="section section-md py-5 alternate-section-background">
   <h2 class="section-title">Education</h2>
   <div class="container">
-    <div class="grid-cards">
-      <div class="card">
-        <p>2022 - 2023</p>
-        <p><b>MSc in Data Science (with Specialization in AI)</b> </p>
-        <p>Newcastle University</p>
-        <p class="text-14">Grade:<b>Distinction</b></p>
+    <div class="row">
+      <div class="col-lg-4 col-md-4 col-sm-4">
+        <div class="card education-card">
+          <p>2022 - 2023</p>
+          <p><b>MSc in Data Science (with Specialization in AI)</b> </p>
+          <p>Newcastle University</p>
+          <p class="text-14">Grade:<b>Distinction</b></p>
+        </div>
       </div>
-      <div class="card">
-        <p>2014 - 2018</p>
-        <p><b> B.Tech in Mechanical Engineering &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</b></p>
-        <p>Reva University</p>
-        <p class="text-14">Grade:<b>Distinction</b></p>
+      <div class="col-lg-4 col-md-4 col-sm-4">
+        <div class="card education-card">
+          <p>2014 - 2018</p>
+          <p><b> B.Tech in Mechanical Engineering &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</b></p>
+          <p>Reva University</p>
+          <p class="text-14">Grade:<b>Distinction</b></p>
+        </div>
       </div>
-      <div class="card">
-        <p>2012 - 2014</p>
-        <p><b>Pre-University - Physics, Chemistry, Mathematics, Computer Science</b></p>
-        <p>St. Josephs Pre University College</p>
-        <p class="text-14">Grade:<b>Distinction</b></p>
+      <div class="col-lg-4 col-md-4 col-sm-4">
+        <div class="card education-card">
+          <p>2012 - 2014</p>
+          <p><b>Pre-University - Physics, Chemistry, Mathematics, Computer Science</b></p>
+          <p>St. Josephs Pre University College</p>
+          <p class="text-14">Grade:<b>Distinction</b></p>
+        </div>
       </div>
     </div>
-
   </div>
 </div>
 
 <!--Hobbies and Interests-->
-<div class="section section-md py-5 alternate-section-background">
+<div class="section section-md py-5">
   <h2 class="section-title">Hobbies and Interests</h2>
   <div class="container">
-    <div class="hobbies-grid-cards">
+    <div class="row">
+      <div class="col-lg-6 col-md-4 col-sm-4">
+        <div class="card flex-row">
+          <img [src]=runningImagePath alt="" class="hobbies-img">
+          <div class="card-body custom-card-body">
+            <span class="card-title h5 h4-sm">Running</span>
+            <div>
+              <a href="https://www.runtastic.com/user/dd4d5e31-cacf-3c45-02d2-6e99a86d8a9d" class="btn btn-primary hobbies-btn" target="_blank" rel="noopener noreferrer">Adidas Running</a>
+              <a href="https://www.strava.com/athletes/10106337" class="btn btn-primary hobbies-btn" target="_blank" rel="noopener noreferrer">Strava</a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-6 col-md-4 col-sm-4">
+        <div class="card flex-row">
+          <img [src]=gamingImagePath alt="" class="hobbies-img">
+          <div class="card-body custom-card-body">
+            <span class="card-title h5 h4-sm">Gaming</span>
+            <div>
+              <a href="https://steamcommunity.com/id/paul_jr/" class="btn btn-primary hobbies-btn" target="_blank" rel="noopener noreferrer">Steam Profile</a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-6 col-md-4 col-sm-4">
+        <div class="card flex-row">
+          <img [src]=booksImagePath alt="" class="hobbies-img">
+          <div class="card-body custom-card-body">
+            <span class="card-title h5 h4-sm">Reading</span>
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-6 col-md-4 col-sm-4">
+        <div class="card flex-row">
+          <img [src]=bingeImagePath alt="" class="hobbies-img">
+          <div class="card-body custom-card-body">
+            <span class="card-title h5 h4-sm">Binge-watching</span>
+            <div>
+              <a href="https://mydramalist.com/list/47a0jxNL" class="btn btn-primary hobbies-btn" target="_blank" rel="noopener noreferrer">K-Drama List</a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+
+
+    <!-- <div class="hobbies-grid-cards">
       <div class="card flex-row">
         <img [src]=runningImagePath alt="" class="hobbies-img">
         <div class="card-body custom-card-body">
@@ -556,6 +631,6 @@
           </div>
         </div>
       </div>
-    </div>
+    </div> -->
   </div>
 </div>
