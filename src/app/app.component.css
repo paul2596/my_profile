@@ -351,6 +351,26 @@
 
 
 
+@media (max-width: 1025px) {
+  .speech-bubble{
+    text-align:center;
+    font-family:monospace;
+    font-size:12px;
+    font-weight:bold;
+    color:var(--text-color);
+    background:var(--bubble-color);
+    padding:0.5em;
+    position:absolute;
+    border-radius:var(--bubble-corners);
+    max-width:var(--w);
+    box-shadow:0 0 0 var(--border-size) var(--border-color);
+    min-width: 320px;
+  }
+  .bubble-position{
+    bottom: 230px !important;
+    right: 225px !important;
+  }
+}
 
 
 @media (max-width: 920px) {
