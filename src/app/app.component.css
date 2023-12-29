@@ -554,3 +554,7 @@
 .bachelor-proj{
   min-height: 692px;
 }
+
+.footer-text{
+  text-align: right;
+}
