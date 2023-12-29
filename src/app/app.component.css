@@ -305,7 +305,7 @@
   box-shadow: 0 4px 12px #aaaaaacc;
   margin-right: 5px;
   margin-bottom: 5px;
-  min-height: 60px;
+  min-height: 80px;
 }
 
 .skills-img{
@@ -369,7 +369,7 @@
     min-width: 320px;
   }
   .bubble-position{
-    bottom: 145px !important;
+    bottom: 142px !important;
     right: 22px !important;
   }
 }
@@ -390,7 +390,7 @@
     min-width: 200px;
   }
   .bubble-position{
-    bottom: 85px !important;
+    bottom: 76px !important;
     right: 14px !important;
   }
 }
