@@ -45,4 +45,19 @@ export class AppComponent {
   selectTab(tabButton: string){
     this.selectedTabButton = tabButton;
   }
+
+  showMoreTurbineItems = false;
+  toggleTurbineItems() {
+    this.showMoreTurbineItems = !this.showMoreTurbineItems;
+  }
+  showMoreVizItems = false;
+  toggleVizItems() {
+    this.showMoreVizItems = !this.showMoreVizItems;
+  }
+  showMoreHackathonItems = false;
+  toggleHackathonItems() {
+    this.showMoreHackathonItems = !this.showMoreHackathonItems;
+  }
+
+
 }

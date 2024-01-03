@@ -83,8 +83,18 @@
                 <div class="ratio ratio-16x9">
                   <img src="/assets/offshore-turbine.jpg" alt="">
                 </div>
+                <ul id="proj-list-turbine" class="proj-list-height">
+                  <li>Collaborated closely with supervisors from the <b>National Innovation Center for
+                    Data,
+                    UK</b>
+                    and <b>Equinor, Norway,</b> in the execution of the project.</li>
+                  <li *ngIf="showMoreTurbineItems">Conducted in-depth analysis on atmospheric features and stability parameters (e.g., Obukhov Length) by integrating turbine and climate reanalysis data from numerical weather prediction models.</li>
+                  <li *ngIf="showMoreTurbineItems">Executed directional analysis to examine the impact of various features on power prediction during wind flow over land and sea.</li>
+                  <li *ngIf="showMoreTurbineItems">Deployed trained models using Flask (Python backend) and AngularJS for interactive frontend interactions in a web-based environment.</li>
+                </ul>
+                <button (click)="toggleTurbineItems()">View {{ showMoreTurbineItems ? 'Less' : 'More' }}</button>
                 <a href="https://github.com/paul2596/oswt_app" class="btn btn-primary margin-top-10" target="_blank"
-                  rel="noopener noreferrer">GitHub Repo</a>
+                  rel="noopener noreferrer">Visit GitHub Repo</a>
               </div>
             </div>
             <div class="col-lg-4 col-md-12 col-sm-12">
@@ -94,8 +104,17 @@
                 <div class="ratio ratio-16x9">
                   <img src="/assets/data-viz.png" alt="">
                 </div>
+                <ul id="proj-list-viz" class="proj-list-height">
+                  <li>Pre-processed and transformed data obtained from outputs of supercomputer simulations from
+                    Defence Science
+                    and Technology Laboratory (DSTL) and Public Health England(PHE).</li>
+                  <li *ngIf="showMoreVizItems">Developed interactive dashboards to communicate data patterns effectively.</li>
+                  <li *ngIf="showMoreVizItems">Addressed visualization needs, incorporating Gestalt design principles and color-blind-friendly palettes.</li>
+                  <li *ngIf="showMoreVizItems">Enhanced user experience by implementing customized filters using the Haversine equation for radial disease spread based on regional coordinates.</li>
+                </ul>
+                <button (click)="toggleVizItems()">View {{ showMoreVizItems ? 'Less' : 'More' }}</button>
                 <a href="https://github.com/paul2596/oswt_app" class="btn btn-primary margin-top-10" target="_blank"
-                  rel="noopener noreferrer">GitHub Repo</a>
+                  rel="noopener noreferrer">Visit GitHub Repo</a>
               </div>
             </div>
             <div class="col-lg-4 col-md-12 col-sm-12">
@@ -105,8 +124,18 @@
                 <div class="ratio ratio-16x9">
                   <img src="/assets/selenium-python-img.png" alt="">
                 </div>
+                <ul id="proj-list-hackathon" class="proj-list-height">
+                  <li>Scraped data for a set of companies from various sources like public linkedin profiles, public
+                    registries</li>
+                  <li>Accumulated data pertaining to company specialities, technology, capital, shares and other
+                    information
+                  </li>
+                  <li *ngIf="showMoreHackathonItems">Preprocessed the raw data and managed the data using PostgreSQL</li>
+                  <li *ngIf="showMoreHackathonItems">Presented the methodology used and outcome to the organizers</li>
+                </ul>
+                <button (click)="toggleHackathonItems()">View {{ showMoreHackathonItems ? 'Less' : 'More' }}</button>
                 <a href="https://github.com/paul2596/Data-Science-Hackathon" class="btn btn-primary margin-top-10" target="_blank"
-                  rel="noopener noreferrer">GitHub Repo</a>
+                  rel="noopener noreferrer">Visit GitHub Repo</a>
               </div>
             </div>
           </div>
@@ -133,10 +162,10 @@
                     for
                     Offshore Wind Turbines</h5>
                   <ul class="text-justify">
-                    <li>Worked collaboratively under the guidance of supervisors from National Innovation Center for
+                    <li>Collaborated closely with supervisors from the <b>National Innovation Center for
                       Data,
-                      UK
-                      and Equinor, Norway.</li>
+                      UK</b>
+                      and <b>Equinor, Norway,</b> in the execution of the project.</li>
                     <li>Carried out an comprehensive analysis to study impact of additional atmospheric features and
                       atmospheric stability parameter like Obukhov Length by combining data from the turbine and weather
                       information from climate reanalysis data generated from numerical weather prediction models .</li>
@@ -310,13 +339,9 @@
                     <li>Pre-processed and transformed data obtained from outputs of supercomputer simulations from
                       Defence Science
                       and Technology Laboratory (DSTL) and Public Health England(PHE).</li>
-                    <li>Developed dashboards and integrated appropriate interactions that help convey the data story
-                      through the patterns identified</li>
-                    <li>Considered various visualization requirements for the dashboard such as Gestalt design
-                      principles, Color blind
-                      friendly palettes and other visual aspects</li>
-                    <li>For ease of use and understanding built customized filter to get radial spread of disease based
-                      on regional coordinates based on the Haversine equation.</li>
+                    <li>Developed interactive dashboards to communicate data patterns effectively.</li>
+                    <li>Addressed visualization needs, incorporating Gestalt design principles and color-blind-friendly palettes.</li>
+                    <li>Enhanced user experience by implementing customized filters using the Haversine equation for radial disease spread based on regional coordinates.</li>
                   </ul>
                   <div class="center-align">
                     <a href="https://github.com/paul2596/data_visualization_sep_2022" class="btn btn-primary"
