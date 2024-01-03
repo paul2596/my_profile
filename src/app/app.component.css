@@ -106,6 +106,7 @@
 
 .text-justify{
   text-align: justify;
+  color: black;
 }
 .section-title, .section-desc {
   margin: 1rem auto;
@@ -607,4 +608,8 @@
   min-height: 150px;
   color: black;
   margin-top: 10px;
+}
+
+.ul-text{
+  color: black;
 }
