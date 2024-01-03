@@ -605,8 +605,6 @@
 
 .proj-list-height{
   min-height: 150px;
-}
-
-#itemsList li:not(:first-child) {
-  display: none;
+  color: black;
+  margin-top: 10px;
 }
