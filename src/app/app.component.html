@@ -88,7 +88,7 @@
                     Data,
                     UK</b>
                     and <b>Equinor, Norway,</b> in the execution of the project.</li>
-                  <li *ngIf="showMoreTurbineItems">Conducted in-depth analysis on atmospheric features and stability parameters (e.g., Obukhov Length) by integrating turbine and climate reanalysis data from numerical weather prediction models.</li>
+                  <li >Conducted in-depth analysis on atmospheric features and <span *ngIf="!showMoreTurbineItems">...</span> <span *ngIf="showMoreTurbineItems">stability parameters (e.g., Obukhov Length) by integrating turbine and climate reanalysis data from numerical weather prediction models.</span></li>
                   <li *ngIf="showMoreTurbineItems">Executed directional analysis to examine the impact of various features on power prediction during wind flow over land and sea.</li>
                   <li *ngIf="showMoreTurbineItems">Deployed trained models using Flask (Python backend) and AngularJS for interactive frontend interactions in a web-based environment.</li>
                 </ul>
